@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  llama-server:
+    image: your-llama-server-image
+    ports:
+      - "5000:5000"
+    environment:
+      - SOME_ENV_VAR=value
+
+  proxy-manager:
+    image: your-proxy-manager-image
+    ports:
+      - "8080:8080"
+    environment:
+      - ANOTHER_ENV_VAR=value
